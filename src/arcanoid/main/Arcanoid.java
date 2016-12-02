@@ -1,4 +1,4 @@
-package arcanoid;
+package arcanoid.main;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;

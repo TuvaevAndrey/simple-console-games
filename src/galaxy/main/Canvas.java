@@ -1,14 +1,10 @@
-package arcanoid;
+package galaxy.main;
 
-/**
- * Класс-холст для отрисовки.
- */
+
 public class Canvas
 {
-    //ширина и высота
     private int width;
     private int height;
-    //матрица, где рисуем. символ - это цвет.
     private char[][] matrix;
 
     public Canvas(int width, int height)
@@ -18,18 +14,11 @@ public class Canvas
         this.matrix = new char[height + 2][width + 2];
     }
 
-    /**
-     * Очищаем холст
-     */
     public void clear()
     {
         this.matrix = new char[height + 2][width + 2];
     }
 
-    /**
-     * Печатаем переданную фигуру в указанных координатах уветом c.
-     * Если переданный массив содержит единицы, то на холсте им будут соответствовать символы - с.
-     */
     public void drawMatrix(double x, double y, int[][] matrix, char c)
     {
         int height = matrix.length;
@@ -45,9 +34,6 @@ public class Canvas
         }
     }
 
-    /**
-     * Ставим одну точку на холсте с координатами (x,y) и цветом - c.
-     */
     public void setPoint(double x, double y, char c)
     {
         int x0 = (int) Math.round(x);
@@ -58,9 +44,6 @@ public class Canvas
         matrix[y0][x0] = c;
     }
 
-    /**
-     * Печатаем содержимое холста на экран.
-     */
     public void print()
     {
         System.out.println();

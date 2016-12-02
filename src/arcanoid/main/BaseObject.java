@@ -1,4 +1,4 @@
-package galaxy;
+package arcanoid.main;
 
 /**
  * Базовый класс для всех объектов игры.
@@ -10,15 +10,12 @@ public abstract class BaseObject
     protected double y;
     //радиус объекта
     protected double radius;
-    //состояние объект - жив ли объект
-    private boolean isAlive;
 
-    public BaseObject(double x, double y, double radius)
+    protected BaseObject(double x, double y, double radius)
     {
         this.x = x;
         this.y = y;
         this.radius = radius;
-        this.isAlive = true;
     }
 
     public double getX()
@@ -54,18 +51,12 @@ public abstract class BaseObject
     /**
      * Метод рисует свой объект на "канвасе".
      */
-    public void draw(Canvas canvas)
-    {
-        //do nothing
-    }
+    public abstract void draw(Canvas canvas);
 
     /**
      * Двигаем себя на один ход.
      */
-    public void move()
-    {
-        //do nothing
-    }
+    public abstract void move();
 
     /**
      * Проверяем - не выходит ли (x,y) за границы.
@@ -76,21 +67,6 @@ public abstract class BaseObject
         if (x > maxx) x = maxx;
         if (y < miny) y = miny;
         if (y > maxy) y = maxy;
-    }
-
-    public boolean isAlive()
-    {
-        return isAlive;
-    }
-
-    public void setAlive(boolean alive)
-    {
-        isAlive = alive;
-    }
-
-    public void die()
-    {
-        isAlive = false;
     }
 
     /**

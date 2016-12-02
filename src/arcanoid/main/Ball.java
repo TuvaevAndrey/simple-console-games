@@ -1,4 +1,4 @@
-package arcanoid;
+package arcanoid.main;
 
 /**
  * Класс для шарика в игре

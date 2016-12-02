@@ -1,4 +1,4 @@
-package arcanoid;
+package arcanoid.main;
 
 import javax.swing.*;
 import java.awt.*;

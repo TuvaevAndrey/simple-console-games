@@ -1,4 +1,4 @@
-package galaxy;
+package galaxy.main;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;

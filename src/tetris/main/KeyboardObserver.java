@@ -1,4 +1,4 @@
-package galaxy;
+package tetris.main;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-package arcanoid;
+package arcanoid.main;
 
 /**
  *  Подставка, с помощью которой отражаем мячик.
