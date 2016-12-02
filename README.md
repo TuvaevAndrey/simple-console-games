@@ -1,4 +1,4 @@
-# simple-console-games pack include :
+# simple-console-games pack includes :
 
 ### 1. Snake 
        > you have to catch the mouse with increasing speed
